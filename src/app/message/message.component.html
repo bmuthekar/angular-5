@@ -1,0 +1,14 @@
+<div *ngIf="messageService.messages.length">
+
+    <h2>Message Alerts</h2>
+    <button class="clear" (click)="messageService.clear()">Clear</button>
+    <!-- <div *ngFor='let message of messageService.messages'> {{message}} </div> -->
+
+    <div *ngFor='let message of messageService.messages' class="page-alerts">
+        <div class="alert alert-success page-alert" id="alert-5">
+            <!-- <button type="button" class="close"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button> -->
+            <strong>{{message}}</strong>
+        </div>
+    </div>
+
+</div>

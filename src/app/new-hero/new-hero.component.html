@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <form role="form" autocomplete="off">
+          <div class="form-group">
+            <label for="email" class="sr-only">Hero id</label>
+            <input type="text" [(ngModel)]="newHero.id" name="heroId" class="form-control" placeholder="Hero id">
+          </div>
+          <div class="form-group">
+            <label for="key" class="sr-only">Password</label>
+            <input type="text" [(ngModel)]="newHero.name" name="heroName" class="form-control" placeholder="Hero Name">
+          </div>
+          <div class="form-group text-center">
+            <button (click)="addHero(newHero)" class="btn btn-success btn-login-submit">Add</button>
+          </div>
+        </form>
+      </div>
+  
+    </div>
+  
+  </div>
